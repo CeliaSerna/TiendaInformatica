@@ -27,13 +27,13 @@ public class Controller {
 			
 			sql="SELECT * FROM  articulos;";
 			rs= sentencia.executeQuery(sql);
-			System.out.println("Artículos de la tabla ");
+			System.out.println("ArtÃ­culos de la tabla ");
 			while(rs.next()) {
 				System.out.println(rs.getInt("codArticulo")+" - "+ rs.getString("nombreArticulo")+ " "+
-				+ rs.getDouble("precio") );
+				+ rs.getDouble("precio")+"E" );
 			}
 			
-			System.out.println("Conexión exitosa");
+			System.out.println("ConexiÃ³n exitosa");
 			con.close();
 			
 			
